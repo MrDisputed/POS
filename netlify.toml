@@ -1,0 +1,11 @@
+# TorqueWorks on Netlify — static front-end + one function backed by Netlify Blobs.
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+# Route the app's /api/* calls to the key-value function.
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/kv/:splat"
+  status = 200
+  force = true

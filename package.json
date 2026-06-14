@@ -1,0 +1,9 @@
+{
+  "name": "torqueworks-netlify",
+  "version": "1.0.0",
+  "description": "TorqueWorks POS on Netlify (static site + Netlify Blobs key-value function).",
+  "private": true,
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  }
+}
